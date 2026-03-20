@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #fff7ed;
+  --color-surface: #ffffff;
+  --color-primary: #ea580c;
+  --color-primary-light: #fb923c;
+  --color-primary-dark: #c2410c;
+  --color-accent: #fdba74;
+  --color-text: #292524;
+  --color-text-muted: #78716c;
+  --color-border: #fed7aa;
+  --color-error: #dc2626;
+  --color-success: #16a34a;
+  --shadow-sm: 0 1px 3px rgba(234, 88, 12, 0.06);
+  --shadow-md: 0 4px 14px -2px rgba(234, 88, 12, 0.1);
+  --shadow-lg: 0 10px 25px -5px rgba(234, 88, 12, 0.12);
+  --radius: 14px;
+  --radius-sm: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', system-ui, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Lora', Georgia, serif;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled):not(.btn-subtle) {
+  color: white;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus,
+a:focus {
+  outline: none;
+}
+
+/* Warm gradient accent for hero areas */
+.bg-warm-gradient {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 50%, #fed7aa 100%);
+}
